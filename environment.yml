@@ -1,0 +1,9 @@
+name: lifecoach
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - openai=0.28.1
+  - langchain=0.0.340
+  - flask=2.2.2
+  - werkzeug==2.2.2
