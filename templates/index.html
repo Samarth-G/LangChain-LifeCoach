@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Life Coach</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="label">
+        <h2>Bollywood Life Coach</h2>
+        <form method="POST" action="{{ url_for('home') }}">
+            <input type="text" name="Input" placeholder="Tell me your problems">
+            <input class="button" type="submit" value="Enter">
+        </form>
+    </div>
+        <p id="output">{{message}}</p>
+    </div>
+</body> 
+</html>
